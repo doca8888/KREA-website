@@ -102,3 +102,38 @@ h2 span { font-family:var(--serif); font-weight:400; }
 .project-grid-lines { background-image:linear-gradient(to right, rgba(0,0,0,.11) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,.11) 1px, transparent 1px); }
 .krea-acronym { color:var(--acid-2) !important; }
 @media (max-width: 850px) { .project-visual { min-height:390px; border-left:0; } .project-stage { font-size:9px; } .project-visual::before { width:58px; height:58px; } }
+
+/* Final responsive and interaction refinements. */
+html, body { max-width:100%; overflow-x:hidden; }
+.hero, .page-hero { overflow:hidden; }
+h1 { font-size:clamp(3.2rem, 6.5vw, 6.2rem); }
+h2 { font-size:clamp(2.5rem, 4.6vw, 4.6rem); }
+.hero h1 { font-size:clamp(3.2rem, 6.5vw, 6.2rem); }
+.page-hero h1 { font-size:clamp(3rem, 6.2vw, 6rem); }
+.section-heading h2 { font-size:clamp(2.6rem, 4.3vw, 4.4rem); }
+.service-row h2 { font-size:clamp(2.5rem, 4.6vw, 4.6rem); }
+.contact-band h2 { font-size:clamp(2.4rem, 4.6vw, 4.8rem); }
+.team-copy h2 { font-size:clamp(2.6rem, 4.6vw, 4.8rem); }
+.service-card h3 { font-size:clamp(1.45rem, 2.3vw, 1.75rem); }
+.value-card h2, .legal-copy h2 { font-size:clamp(1.75rem, 3vw, 2.45rem); }
+.statement { font-size:clamp(2.5rem, 4.8vw, 5rem); }
+.about-statement-mark { font-size:clamp(3.5rem, 6.2vw, 6.5rem); }
+.hero-image { position:relative; min-height:475px; background:#000; overflow:hidden; }
+.hero-image img { display:block; width:100%; height:100%; min-height:475px; object-fit:cover; object-position:center; filter:contrast(1.04) saturate(.8); }
+.hero-image::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 58%, rgba(0,0,0,.5)); pointer-events:none; }
+.hero-image .visual-note { z-index:2; color:#fff; }
+.service-row-media { justify-self:end; align-self:center; width:190px; height:145px; overflow:hidden; border:1px solid var(--ink); background:#000; }
+.service-row-media img { display:block; width:100%; height:100%; object-fit:cover; filter:contrast(1.04) saturate(.78); }
+.card-acid { color:var(--white); }
+.card-acid p { color:var(--white); opacity:.88; }
+.button-acid:hover, .main-nav .nav-cta:hover { background:var(--acid); color:var(--white); }
+.button-dark:hover { background:var(--acid); color:var(--white); }
+@media (max-width: 850px) {
+  h1, .hero h1 { font-size:clamp(2.65rem, 11vw, 4.6rem); }
+  h2 { font-size:clamp(2.2rem, 9vw, 3.8rem); }
+  .page-hero h1 { font-size:clamp(2.8rem, 11vw, 4.8rem); }
+  .section-heading h2, .service-row h2, .team-copy h2, .contact-band h2 { font-size:clamp(2.2rem, 9vw, 3.7rem); }
+  .statement { font-size:clamp(2.2rem, 9vw, 3.7rem); }
+  .hero-image, .hero-image img { min-height:390px; }
+  .service-row-media { grid-column:2; justify-self:start; width:100%; max-width:330px; height:140px; margin-top:8px; }
+}

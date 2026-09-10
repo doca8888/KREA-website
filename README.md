@@ -12,6 +12,8 @@ Sito statico multipagina pronto per GitHub Pages.
 - `assets/style.css` — stile condiviso
 - `assets/script.js` — menu mobile, pagina attiva e piccole animazioni
 - `assets/krea-engineering.png` — logo ufficiale fornito
+- `assets/hero-construction.png` — immagine hero generata per la home
+- `assets/service-*.png` — immagini dedicate ai cinque servizi
 
 ## Prima della pubblicazione
 
