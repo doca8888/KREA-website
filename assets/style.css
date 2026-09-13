@@ -349,8 +349,8 @@ main > section { background-image:none; }
 
 /* Shared document-friendly typeface */
 :root {
-  --sans:'Courier New', Courier, monospace;
-  --mono:'Courier New', Courier, monospace;
-  --display:'Courier New', Courier, monospace;
-  --serif:'Courier New', Courier, monospace;
+  --sans:'Aptos', Arial, sans-serif;
+  --mono:'Aptos', Arial, sans-serif;
+  --display:'Aptos', Arial, sans-serif;
+  --serif:'Aptos', Arial, sans-serif;
 }
