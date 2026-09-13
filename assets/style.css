@@ -346,3 +346,11 @@ main > section { background-image:none; }
   .contact-form input, .contact-form textarea { box-sizing:border-box; }
   .contact-form .button { width:max-content; }
 }
+
+/* Shared document-friendly typeface */
+:root {
+  --sans:'Courier New', Courier, monospace;
+  --mono:'Courier New', Courier, monospace;
+  --display:'Courier New', Courier, monospace;
+  --serif:'Courier New', Courier, monospace;
+}
