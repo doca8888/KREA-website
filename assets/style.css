@@ -307,3 +307,28 @@ main > section { background-image:none; }
   .hero, .page-hero { width:min(100% - 40px, 680px); }
   .hero { min-height:0; padding-top:25px; padding-bottom:55px; }
 }
+
+/* Contact form: single fluid column on phones */
+@media (max-width:850px) {
+  .contact-layout {
+    grid-template-columns:minmax(0, 1fr);
+    gap:48px;
+    width:min(100% - 40px, 680px);
+    padding-bottom:65px;
+  }
+  .contact-details,
+  .contact-form-wrap,
+  .contact-form { width:100%; min-width:0; }
+  .contact-form-wrap { padding-left:0; }
+  .contact-form { grid-template-columns:minmax(0, 1fr); grid-template-rows:auto; }
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .button { grid-column:1; max-width:100%; }
+  .contact-form input,
+  .contact-form textarea { width:100%; min-width:0; margin-bottom:24px; }
+  .contact-form textarea { min-height:130px; height:auto; }
+  .contact-form .button { margin-top:8px; }
+  .contact-detail a,
+  .contact-detail p { overflow-wrap:anywhere; }
+}
