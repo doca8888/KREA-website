@@ -165,11 +165,7 @@ h1 em, h2 em, .statement em { font-family:var(--display); font-style:normal; fon
 .value-card-grey { background:var(--grey); color:#fff; border-top-color:var(--grey); }
 .value-card-grey > span, .value-card-grey p { color:#fff; }
 .team-symbol span:nth-child(4) { background:var(--grey); color:#fff; border-color:var(--grey); }
-<<<<<<< HEAD
 .button span[aria-hidden="true"], .text-link span, .arrow-link span, .card-arrow, .main-nav .nav-cta span { font-family:var(--sans); font-weight:700; font-variant-ligatures:none; }
-=======
-.button span[aria-hidden="true"], .text-link span, .arrow-link span, .card-arrow, .main-nav .nav-cta span { font-family:Arial, sans-serif; font-weight:700; font-variant-ligatures:none; }
->>>>>>> 25a9a2ca268ee975a87fad13503549767a49581d
 .button span[aria-hidden="true"], .main-nav .nav-cta span { margin-left:4px; }
 .card-arrow { font-size:25px; }
 .page-hero { overflow:visible; }
@@ -385,11 +381,8 @@ main > section { background-image:none; }
 @media (max-width:850px) {
   .footer-wordmark { width:min(220px, 100%); }
 }
-<<<<<<< HEAD
 
 /* Mobile hero image: keep the photograph clear without a dark bottom band. */
 @media (max-width:850px) {
   .hero-image::after { background:none; }
 }
-=======
->>>>>>> 25a9a2ca268ee975a87fad13503549767a49581d
